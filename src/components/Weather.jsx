@@ -62,7 +62,7 @@ const Weather = () => {
       </div>
       <img
         className="w-[150px] mtb-8 "
-        src={`https://openweathermap.org/img/wn/${weatherData.icon}.png`}
+        src={`https://openweathermap.org/img/wn/${weatherData.icon}.png` || clear_icon}
       />
       <p className="text-white text-[48px] leading-10 mt-8">
         {Math.floor(weatherData.temp)}°
